@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141112045430) do
+ActiveRecord::Schema.define(version: 20141112054936) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -61,7 +61,14 @@ ActiveRecord::Schema.define(version: 20141112045430) do
     t.date     "end_of_life"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "location_id"
+    t.integer  "manufacturer_id"
+    t.integer  "department_id"
   end
+
+  add_index "items", ["department_id"], name: "index_items_on_department_id"
+  add_index "items", ["location_id"], name: "index_items_on_location_id"
+  add_index "items", ["manufacturer_id"], name: "index_items_on_manufacturer_id"
 
   create_table "locations", force: true do |t|
     t.string   "location_name"
