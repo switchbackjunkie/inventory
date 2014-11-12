@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asset_tag: MyString
+  serial_number: MyString
+  cost: 9.99
+  replacement_cost: MyString
+  purchase_date: 2014-11-11
+  end_of_life: 2014-11-11
+
+two:
+  asset_tag: MyString
+  serial_number: MyString
+  cost: 9.99
+  replacement_cost: MyString
+  purchase_date: 2014-11-11
+  end_of_life: 2014-11-11
